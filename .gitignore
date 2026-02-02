@@ -1,0 +1,33 @@
+# ===== Maven =====
+target/
+*.log
+
+# ===== Java =====
+*.class
+*.jar
+*.war
+*.ear
+
+# ===== Eclipse =====
+.settings/
+.classpath
+.project
+
+# ===== IDE (通用) =====
+.idea/
+*.iml
+.vscode/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Environment / Local Config =====
+env.bat
+.env
+*.local
+
+# ===== Temporary / Backup =====
+*.tmp
+*.bak
+*.swp
