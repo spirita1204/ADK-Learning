@@ -1,5 +1,6 @@
 package com.example.multitool;
 
+import com.example.config.LlmCofig;
 import com.google.adk.agents.BaseAgent;
 import com.google.adk.agents.LlmAgent;
 import com.google.adk.events.Event;
@@ -22,14 +23,15 @@ public class MultiToolAgent {
 
     private static String USER_ID = "student";
     private static String NAME = "multi_tool_agent";
-
     // The run your agent with Dev UI, the ROOT_AGENT should be a global public static final variable.
     public static final BaseAgent ROOT_AGENT = initAgent();
 
     public static BaseAgent initAgent() {
+        LlmCofig llmConfig = new LlmCofig();
         return LlmAgent.builder()
             .name(NAME)
-            .model("gemini-2.0-flash")
+            //.model("gemini-2.0-flash")
+            .model(llmConfig.createModel())
             .description("Agent to answer questions about the time and weather in a city.")
             .instruction(
                 "You are a helpful agent who can answer user questions about the time and weather"
