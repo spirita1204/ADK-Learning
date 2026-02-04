@@ -17,7 +17,7 @@ public class LlmCofig {
   public LangChain4j createModel() {
      return new LangChain4j(OpenAiChatModel.builder()
          .baseUrl("http://localhost:11434/v1")  // Local Ollama server endpoint
-         .modelName("llama3.2:latest")              // Specific model version
+         .modelName("llama3.2:1b")              // Specific model version
          .temperature(0.3)                     // Low temperature for more deterministic responses
          .build());
   }
