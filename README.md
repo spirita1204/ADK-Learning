@@ -15,16 +15,22 @@
 ```
 src/main/java/com/example/
 ├── config/
-│   └── LlmCofig.java           # LLM 配置類別，支援本地 Ollama
+│   └── LlmCofig.java               # LLM 配置類別，支援本地 Ollama
 ├── agent/
-│   ├── HelloTimeAgent.java     # 基礎時間查詢代理
-│   └── AgentCliRunner.java     # CLI 執行環境
+│   ├── HelloTimeAgent.java         # 基礎時間查詢代理
+│   └── AgentCliRunner.java         # CLI 執行環境
+├── llmAgent/
+│   └── LlmAgentExample.java        # 基礎 LLM 代理範例
 ├── multitoolAgent/
-│   └── MultiToolAgent.java     # 多工具整合代理
-└── streamingAgent/
-    ├── ScienceTeacherAgent.java # 科學教師代理（串流支援）
-    └── tools/
-        └── LiveAudioRun.java   # 音訊處理工具
+│   └── MultiToolAgent.java         # 多工具整合代理
+├── streamingAgent/
+│   ├── ScienceTeacherAgent.java    # 科學教師代理（串流支援）
+│   └── tools/
+│       └── LiveAudioRun.java      # 音訊處理工具
+└── workFlowAgent/
+    ├── SequentialAgentExample.java  # 順序執行工作流程
+    ├── ParallelResearchPipeline.java # 平行研究管線
+    └── LoopAgentExample.java        # 迴圈執行代理範例
 ```
 
 ## 功能特色
@@ -36,8 +42,12 @@ src/main/java/com/example/
 
 ### 2. 多種代理類型
 - **HelloTimeAgent**: 基礎時間查詢代理
+- **LlmAgentExample**: 基礎 LLM 代理示範
 - **MultiToolAgent**: 具備多種工具能力的代理
 - **ScienceTeacherAgent**: 科學教學專用代理，支援串流輸出
+- **SequentialAgentExample**: 順序執行工作流程代理
+- **ParallelResearchPipeline**: 平行任務處理管線
+- **LoopAgentExample**: 迴圈執行模式代理
 
 ### 3. 開發工具整合
 - 內建 Dev UI 介面用於除錯
