@@ -1,6 +1,7 @@
 package com.example.config;
 
 import com.google.adk.models.langchain4j.LangChain4j;
+import java.time.Duration;
 import dev.langchain4j.model.openai.OpenAiChatModel;
 
 /**
@@ -18,6 +19,7 @@ public class LlmCofig {
      return new LangChain4j(OpenAiChatModel.builder()
          .baseUrl("http://localhost:11434/v1")  // Local Ollama server endpoint
          .modelName("llama3.2:latest")              // Specific model version
+         .timeout(Duration.ofMinutes(10))
          .temperature(0.3)                     // Low temperature for more deterministic responses
          .build());
   }
