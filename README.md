@@ -26,11 +26,19 @@ src/main/java/com/example/
 ├── streamingAgent/
 │   ├── ScienceTeacherAgent.java    # 科學教師代理（串流支援）
 │   └── tools/
-│       └── LiveAudioRun.java      # 音訊處理工具
-└── workFlowAgent/
-    ├── SequentialAgentExample.java  # 順序執行工作流程
-    ├── ParallelResearchPipeline.java # 平行研究管線
-    └── LoopAgentExample.java        # 迴圈執行代理範例
+│       └── LiveAudioRun.java       # 音訊處理工具
+├── workFlowAgent/
+│   ├── SequentialAgentExample.java  # 順序執行工作流程
+│   ├── ParallelResearchPipeline.java # 平行研究管線
+│   └── LoopAgentExample.java        # 迴圈執行代理範例
+├── customAgent/
+│   └── StoryFlowAgentExample.java  # 自定義故事流程代理
+├── customTools/
+│   ├── CustomerSupportAgentApp.java  # 客服代理範例
+│   ├── LongRunningFunctionExample.java # 長時運行函式範例
+│   └── WeatherSentimentAgentApp.java  # 天氣情感分析代理
+└── mcp/
+    └── McpAgentCreator.java        # MCP 代理創建器
 ```
 
 ## 功能特色
@@ -48,6 +56,10 @@ src/main/java/com/example/
 - **SequentialAgentExample**: 順序執行工作流程代理
 - **ParallelResearchPipeline**: 平行任務處理管線
 - **LoopAgentExample**: 迴圈執行模式代理
+- **StoryFlowAgentExample**: 多階段故事生成流程代理
+- **CustomerSupportAgentApp**: 客服支援代理範例
+- **WeatherSentimentAgentApp**: 天氣情感分析代理
+- **McpAgentCreator**: MCP 協議代理創建器
 
 ### 3. 開發工具整合
 - 內建 Dev UI 介面用於除錯
